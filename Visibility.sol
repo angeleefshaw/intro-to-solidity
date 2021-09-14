@@ -23,7 +23,7 @@ contract VisibilityExamples {
         externalString = _externalString;
     }
 
-    //Can only be called by the main contract
+    //Can only be called by the main contract and not derived contracts
     function storePrivateNumber(uint256 _privateNumber) private {
         privateNumber = _privateNumber;
     }
