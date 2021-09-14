@@ -8,6 +8,13 @@ contract VisibilityExamples {
     string externalString;
     bool internal internalBool;
 
+    struct People {
+        uint256 favoriteNumber;
+        string name;
+    }
+
+    People public person = People({favoriteNumber: 2, name: "Angelee"});
+
     //Can only be called from withing this contract and any derived contracts
     function storeInternalBool(bool _internalBool) internal {
         internalBool = _internalBool;
