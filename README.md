@@ -1,2 +1,2 @@
 # intro-to-solidity
- Learning the solidity language
+ Learning the solidity language by creating mock-up smart contracts
