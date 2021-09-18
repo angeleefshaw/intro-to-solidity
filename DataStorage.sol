@@ -1,3 +1,5 @@
+//SPDX-License-Identifier: MIT
+
 pragma solidity ^0.6.0;
 
 contract DataStorage {
@@ -14,7 +16,7 @@ contract DataStorage {
     People[] public people;
 
     //mapping
-    mapping(string => uint256) public nameToFavoriteNumber;
+    mapping(string => uint256) nameToFavoriteNumber;
 
     //There are two ways to store information - memory and storage. Data stored in memory is execution based while data stored in storage is persistent. 
     function addPerson(string memory _name, uint256 _favoriteNumber) public {
